@@ -1,5 +1,5 @@
-import { Section } from "lucide-react"
-import SearchForm from "../components/SearchForm";
+
+import SearchForm from "../../components/SearchForm";
 
 
 export default async function Home({searchParams}:{
@@ -8,6 +8,7 @@ export default async function Home({searchParams}:{
   const query=(await searchParams).query;
 
   return (
+    <>
     <section className="container">
     <h1 className="heading">
       Home<br />
@@ -19,5 +20,6 @@ export default async function Home({searchParams}:{
 
       <SearchForm query={query}/>
     </section>
+    </>
   );
 }

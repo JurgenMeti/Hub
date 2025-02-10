@@ -1,4 +1,4 @@
-import Navigationbar from "../components/Navigationbar";
+import Navigationbar from "../../components/Navigationbar";
 
 export default function Layout({children}: Readonly<{children:React.ReactNode}>){
 return (
