@@ -11,7 +11,7 @@ export default async function Home({searchParams}:{
   const posts = [{
     _createdAt: new Date(),
     views:1,
-    author:{ _id: 1, name:'Juri'},
+    author:{ _id:1, name:'Juri'},
     _id:1, 
     description: 'General description',
     image: "https://www.google.com/imgres?q=images&imgurl=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2015%2F04%2F2 3%2F22%2F00%2Ftree-736885_1280.jpg&imgrefurl=https%3A%2F%2Fpixabay.com%2Fphotos%2Ftree-sunset-clouds-sky-silhouette-736885%2F&docid=J7zy-dl2IZQspM&tbnid=aVgXecnmQ_f1MM&vet=12ahUKEwj0jaeVj76LAxWc9rsIHcl-IuYQM3oECBgQAA..i&w=1280&h=797&hcb=2&ved=2ahUKEwj0jaeVj76LAxWc9rsIHcl-IuYQM3oECBgQAA",
