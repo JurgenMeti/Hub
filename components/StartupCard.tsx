@@ -2,6 +2,7 @@ import { formatDate } from '@/lib/utils'
 import { EyeIcon} from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image';
+import { Button } from './ui/button';
 
 const StartupCard = ({post}:{post: StartupTypeCard} ) => {
   const{ _createdAt, views, author:{ _id: author,name }, title, category, _id, image, description } =post;
@@ -42,6 +43,16 @@ const StartupCard = ({post}:{post: StartupTypeCard} ) => {
      
         <img src= "https://i.imgur.com/02FHkiB.png" alt="startupimage" className="startup-card_img" />
         </Link>
+        <div className='flex-between gap-3 mt-5'>
+          <Link href={`/?query=${category.toLowerCase()}`}>
+          <p className='text-16 font-medium'>{category}</p>
+          </Link>
+          <Button className='startup-card_btn' asChild>
+            <Link href={`/startup/${_id}`}>
+            Details
+            </Link>
+          </Button>
+        </div>
     </li>
   )
 }
